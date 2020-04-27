@@ -30,28 +30,28 @@ loop.run_until_complete(main())
 
 ### FiveM
 
-*class* FiveM(ip: str, port: int):
-- await get_players_raw(): */players.json endpoint - raw list of players*
-- await get_info_raw(): */info.json endpoint - raw dict with server-info*
-- await get_dynamic_raw(): */dynamic.json endpoint - raw dict with server-info*
-- await get_players() -> [[Player](#Player)]: *returns parsed list of [Player](#Player) objects*
-- await get_server_info() -> [Server](#Server): *returns parsed server info [Server](#Server)*
+*class* FiveM(ip: *str*, port: *int*):
+- **await get_players_raw()** -> list: */players.json endpoint - raw list of players*
+- **await get_info_raw()** -> dict: */info.json endpoint - raw dict with server-info*
+- **await get_dynamic_raw()** -> dict: */dynamic.json endpoint - raw dict with server-info*
+- **await get_players()** -> [[Player](#Player)]: *returns parsed list of [Player](#Player) objects*
+- **await get_server_info()** -> [Server](#Server): *returns parsed server info [Server](#Server)*
 
 ### Player
 *class* Player:
-- name: *player username*
-- id: *player id*
-- ping: *current player ping*
-- xbl_id: *xbl id, None if not available*
-- steam_id: *steam id, None if not available*
-- discord_id: *discord id, None if not available*
-- live_id: *live id, None if not available*
-- license_id: *license id, None if not available*
+- **name**: *player username*
+- **id**: *player id*
+- **ping**: *current player ping*
+- **xbl_id**: *xbl id, None if not available*
+- **steam_id**: *steam id, None if not available*
+- **discord_id**: *discord id, None if not available*
+- **live_id**: *live id, None if not available*
+- **license_id**: *license id, None if not available*
 
 ### Server
 *class* Server:
-- hostname: *servers hostname*
-- clients: *current number of clients*
-- max_clients: *max clients allowed on server*
-- game_type: *servers game type*
-- map_name: *servers map name*
+- **hostname**: *servers hostname*
+- **clients**: *current number of clients*
+- **max_clients**: *max clients allowed on server*
+- **game_type**: *servers game type*
+- **map_name**: *servers map name*
