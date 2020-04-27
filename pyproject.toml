@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "async-fivem"
+version = "0.1.1"
+description = "Async API for FiveM endpoints"
+authors = ["makubob <makupi@icloud.com>"]
+license = "GPL-3.0"
+packages = [{include = "fivem"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "\b"
+toml = "^0.10.0"
+
+[tool.poetry.dev-dependencies]
+aiohttp = "^3.6.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
