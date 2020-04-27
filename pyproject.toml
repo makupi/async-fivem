@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "async-fivem"
-version = "1.0.1"
+version = "1.0.2"
 description = "Async API for FiveM endpoints"
 authors = ["makubob <makupi@icloud.com>"]
 license = "GPL-3.0"
