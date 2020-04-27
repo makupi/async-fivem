@@ -1,6 +1,3 @@
-import json
-
-
 def parse_players_json(data) -> list:
     players = list()
     for p in data:

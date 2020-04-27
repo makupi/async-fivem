@@ -3,6 +3,7 @@ import json
 import aiohttp
 
 from .player import parse_players_json
+from .server import Server, parse_server_data
 
 
 async def _fetch_json(url):
@@ -13,7 +14,7 @@ async def _fetch_json(url):
 
 
 class FiveM:
-    def __init__(self, ip, port):
+    def __init__(self, ip: str, port: int):
         self.ip = ip
         self.port = port
         self.url = f"http://{self.ip}:{self.port}"
@@ -33,6 +34,10 @@ class FiveM:
         dynamic = await _fetch_json(url)
         return dynamic
 
-    async def players(self) -> list:
+    async def get_players(self) -> list:
         players_data = await self.get_players_raw()
         return parse_players_json(players_data)
+
+    async def get_server_info(self) -> Server:
+        server_data = await self.get_dynamic_raw()
+        return parse_server_data(server_data)
