@@ -1,5 +1,5 @@
 # async-fivem
-async library for FiveM endpoints written in python
+Asynchronous FiveM package for retrieving Player and Server infos utilizing the [aiohttp](https://docs.aiohttp.org/en/stable/) package.
 
 ## Usage
 ```python
@@ -55,3 +55,8 @@ loop.run_until_complete(main())
 - **max_clients**: *max clients allowed on server*
 - **game_type**: *servers game type*
 - **map_name**: *servers map name*
+
+# Issues and Features
+If you're having any issues or want additional features please create an Issue on [github](https://github.com/makupi/async-fivem/issues).
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A015HXK)
