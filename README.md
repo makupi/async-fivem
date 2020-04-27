@@ -57,7 +57,7 @@ loop.run_until_complete(main())
 - **map_name**: *servers map name*
 
 # Requirements
-- Python >= 3.5.3
+- Python >= 3.6
 - [aiohttp](https://docs.aiohttp.org/en/stable/)
 
 # Issues and Features
