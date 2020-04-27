@@ -18,21 +18,21 @@ class FiveM:
         self.port = port
         self.url = f"http://{self.ip}:{self.port}"
 
-    async def get_players_raw(self) -> dict:
+    async def get_players_raw(self) -> list:
         url = f"{self.url}/players.json"
         players = await _fetch_json(url)
         return players
 
-    async def get_info_raw(self):
+    async def get_info_raw(self) -> dict:
         url = f"{self.url}/info.json"
         info = await _fetch_json(url)
         return info
 
-    async def get_dynamic_raw(self):
+    async def get_dynamic_raw(self) -> dict:
         url = f"{self.url}/dynamic.json"
         dynamic = await _fetch_json(url)
         return dynamic
 
-    async def players(self):
+    async def players(self) -> list:
         players_data = await self.get_players_raw()
-        parse_players_json(players_data)
+        return parse_players_json(players_data)
