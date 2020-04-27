@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "async-fivem"
-version = "1.0.0"
+version = "1.0.1"
 description = "Async API for FiveM endpoints"
 authors = ["makubob <makupi@icloud.com>"]
 license = "GPL-3.0"
 packages = [{include = "fivem"}]
-readme = README.md
-repository = https://github.com/makupi/async-fivem
+readme = "README.md"
+repository = "https://github.com/makupi/async-fivem"
 
 [tool.poetry.dependencies]
 python = "^3.6"
