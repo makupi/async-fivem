@@ -56,6 +56,10 @@ loop.run_until_complete(main())
 - **game_type**: *servers game type*
 - **map_name**: *servers map name*
 
+# Requirements
+- Python >= 3.5.3
+- [aiohttp](https://docs.aiohttp.org/en/stable/)
+
 # Issues and Features
 If you're having any issues or want additional features please create an Issue on [github](https://github.com/makupi/async-fivem/issues).
 
