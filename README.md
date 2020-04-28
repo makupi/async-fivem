@@ -1,6 +1,12 @@
 # async-fivem
 Asynchronous FiveM package for retrieving Player and Server infos utilizing the [aiohttp](https://docs.aiohttp.org/en/stable/) package.
 
+## Installation
+
+async-fivem can be installed via pip.
+
+`pip install async-fivem`
+
 ## Usage
 ```python
 import asyncio
