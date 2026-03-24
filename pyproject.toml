@@ -1,6 +1,6 @@
 [project]
 name = "async-fivem"
-version = "1.0.2"
+version = "1.1.0"
 description = "Async API for FiveM endpoints"
 authors = [{ name = "makubob", email = "makupi@icloud.com" }]
 requires-python = ">=3.6,<4"
