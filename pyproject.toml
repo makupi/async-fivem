@@ -10,11 +10,11 @@ repository = "https://github.com/makupi/async-fivem"
 
 [tool.poetry.dependencies]
 python = "^3.6"
-aiohttp = "\b"
+aiohttp = ">=3.6.0,<4.0.0"
 toml = "^0.10.0"
 
 [tool.poetry.dev-dependencies]
-aiohttp = "^3.6.2"
+aiohttp = ">=3.6.0,<4.0.0"
 python-dotenv = "^0.13.0"
 
 [build-system]
